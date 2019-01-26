@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>PAT乙级真题  三角形 | 小柳学渣的网站</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="题目描述给定三条边，请你判断一下能不能组成一个三角形。
+输入描述:输入包含多组数据，每组数据包含三个正整数a、b、c（1≤a, b, c≤10^100）。
+输出描述:对应每一组数据，如果它们能组成一个三角形，则输出“Yes”；否则，输出“No”。
+输入例子:1 2 32 2 2
+输出例子:NoYes
+1234567891011121314151617181920#include &amp;lt;stdio">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PAT乙级真题  三角形 | 小柳学渣的网站">
+    <meta name="twitter:description" content="题目描述给定三条边，请你判断一下能不能组成一个三角形。
+输入描述:输入包含多组数据，每组数据包含三个正整数a、b、c（1≤a, b, c≤10^100）。
+输出描述:对应每一组数据，如果它们能组成一个三角形，则输出“Yes”；否则，输出“No”。
+输入例子:1 2 32 2 2
+输出例子:NoYes
+1234567891011121314151617181920#include &amp;lt;stdio">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="PAT乙级真题  三角形 | 小柳学渣的网站">
+    <meta property="og:description" content="题目描述给定三条边，请你判断一下能不能组成一个三角形。
+输入描述:输入包含多组数据，每组数据包含三个正整数a、b、c（1≤a, b, c≤10^100）。
+输出描述:对应每一组数据，如果它们能组成一个三角形，则输出“Yes”；否则，输出“No”。
+输入例子:1 2 32 2 2
+输出例子:NoYes
+1234567891011121314151617181920#include &amp;lt;stdio">
+
+    
+    <meta name="author" content="小柳学渣">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="小柳学渣的网站" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2019/01/26/1/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 小柳学渣的网站 的主页"><img src="/images/avatar.jpg" width="80" alt="小柳学渣的网站 logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 小柳学渣的网站">小柳学渣的网站</a></h1>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description"></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/archives">GitHub</a></li>
+            
+              <li class="navigation__item"><a href="https://blog.csdn.net/l503301397">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="https://www.jianshu.com/u/9234da3e7aff">����</a></li>
+            
+              <li class="navigation__item"><a href="/archives">������</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/monniya" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/onlymonniya" title="Twitter" target="_blank">
+      <i class="social fa fa-twitter"></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class="social fa fa-rss"></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2019-01-26T08:33:54.449Z" class="post-list__meta--date date">2019-01-26</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">PAT乙级真题  三角形</h1>
+  </header>
+
+  <section class="post">
+    <p>题目描述<br>给定三条边，请你判断一下能不能组成一个三角形。</p>
+<p>输入描述:<br>输入包含多组数据，每组数据包含三个正整数a、b、c（1≤a, b, c≤10^100）。</p>
+<p>输出描述:<br>对应每一组数据，如果它们能组成一个三角形，则输出“Yes”；否则，输出“No”。</p>
+<p>输入例子:<br>1 2 3<br>2 2 2</p>
+<p>输出例子:<br>No<br>Yes</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> a,b,c;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%lf%lf%lf"</span>,&amp;a,&amp;b,&amp;c))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(a+b&lt;=c||a+c&lt;=b||b+c&lt;=a)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"No\n"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Yes\n"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*********************************</span></span><br><span class="line"><span class="comment">*         小柳学渣</span></span><br><span class="line"><span class="comment">*     2019/1/21  16：21</span></span><br><span class="line"><span class="comment">**********************************/</span></span><br></pre></td></tr></table></figure>
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2019/01/26/2/" title="PAT乙级真题  A+B和C">PAT乙级真题  A+B和C</a></h2>
+                <p class="excerpt">
+                
+                题目描述给定区间[-2的31次方, 2的31次方]内的3个整数A、B和C，请判断A+B是否大于C。
+输入描述:输入第1行给出正整数T(&amp;lt;=10)，是测试用例的个数。随后给出T组测试用例，每组占一行，顺序给出A、B和C。整数间以空格分隔。
+输出描述:对每组测试用例，在一行中输出“Case #X:
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2019-01-26T11:17:13.143Z" class="post-list__meta--date date">2019-01-26</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/01/26/2/">�����Ķ�</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2019/01/26/hello-world/" title="Hello World">Hello World</a></h2>
+                <p class="excerpt">
+                
+                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2019-01-26T06:55:01.867Z" class="post-list__meta--date date">2019-01-26</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/01/26/hello-world/">�����Ķ�</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2019 小柳学渣 - ��վ����� <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">֪ʶ��������-����ҵ��ʹ��-��ͬ��ʽ���� 4.0 ��������Э��</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - ���� <a href="http://hexo.io">Hexo</a> ���ʹ�� <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> ���⣬��<a href="https://monniya.com ">@Monniya</a> �޸��� <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, ԭ������<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
