@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>PAT乙级真题  数素数 | 小柳学渣的网站</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="1013 数素数 （20 分）
+令 P​i​​ 表示第 i 个素数。现任给两个正整数 M≤N≤10​4​​，请输出 P​M​​ 到 P​N​​ 的所有素数。
+输入格式：
+输入在一行中给出 M 和 N，其间以空格分隔。
+输出格式：
+输出从 P​M​​ 到 P​N​​ 的所有素数，每 10 个数字占 1 行，其间以空格分隔，但行末不得有多余空格。
+输入样例：5 27
+输出样例：11 13 17 19">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PAT乙级真题  数素数 | 小柳学渣的网站">
+    <meta name="twitter:description" content="1013 数素数 （20 分）
+令 P​i​​ 表示第 i 个素数。现任给两个正整数 M≤N≤10​4​​，请输出 P​M​​ 到 P​N​​ 的所有素数。
+输入格式：
+输入在一行中给出 M 和 N，其间以空格分隔。
+输出格式：
+输出从 P​M​​ 到 P​N​​ 的所有素数，每 10 个数字占 1 行，其间以空格分隔，但行末不得有多余空格。
+输入样例：5 27
+输出样例：11 13 17 19">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="PAT乙级真题  数素数 | 小柳学渣的网站">
+    <meta property="og:description" content="1013 数素数 （20 分）
+令 P​i​​ 表示第 i 个素数。现任给两个正整数 M≤N≤10​4​​，请输出 P​M​​ 到 P​N​​ 的所有素数。
+输入格式：
+输入在一行中给出 M 和 N，其间以空格分隔。
+输出格式：
+输出从 P​M​​ 到 P​N​​ 的所有素数，每 10 个数字占 1 行，其间以空格分隔，但行末不得有多余空格。
+输入样例：5 27
+输出样例：11 13 17 19">
+
+    
+    <meta name="author" content="小柳学渣">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="小柳学渣的网站" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2019/01/26/4/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 小柳学渣的网站 的主页"><img src="/images/p.jpg" width="80" alt="小柳学渣的网站 logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 小柳学渣的网站">小柳学渣的网站</a></h1>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description"></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/archives">GitHub</a></li>
+            
+              <li class="navigation__item"><a href="https://me.csdn.net/l503301397">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="https://www.jianshu.com/u/9234da3e7aff">简书</a></li>
+            
+              <li class="navigation__item"><a href="/archives">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/monniya" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/onlymonniya" title="Twitter" target="_blank">
+      <i class="social fa fa-twitter"></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class="social fa fa-rss"></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2019-01-26T12:17:13.427Z" class="post-list__meta--date date">2019-01-26</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">PAT乙级真题  数素数</h1>
+  </header>
+
+  <section class="post">
+    <p>1013 数素数 （20 分）</p>
+<p>令 P​i​​ 表示第 i 个素数。现任给两个正整数 M≤N≤10​4​​，请输出 P​M​​ 到 P​N​​ 的所有素数。</p>
+<p>输入格式：</p>
+<p>输入在一行中给出 M 和 N，其间以空格分隔。</p>
+<p>输出格式：</p>
+<p>输出从 P​M​​ 到 P​N​​ 的所有素数，每 10 个数字占 1 行，其间以空格分隔，但行末不得有多余空格。</p>
+<p>输入样例：<br>5 27</p>
+<p>输出样例：<br>11 13 17 19 23 29 31 37 41 43<br>47 53 59 61 67 71 73 79 83 89<br>97 101 103</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,m,i,j,num=<span class="number">0</span>,num2=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;m,&amp;n);</span><br><span class="line">    <span class="comment">/*if(m==1&amp;&amp;m==n)</span></span><br><span class="line"><span class="comment">    &#123;</span></span><br><span class="line"><span class="comment">        printf("2");</span></span><br><span class="line"><span class="comment">        num++;</span></span><br><span class="line"><span class="comment">        num2++;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    else if(m==1)</span></span><br><span class="line"><span class="comment">    &#123;</span></span><br><span class="line"><span class="comment">        printf("2 ");</span></span><br><span class="line"><span class="comment">        num++;</span></span><br><span class="line"><span class="comment">        num2++;</span></span><br><span class="line"><span class="comment">    &#125;*/</span></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;num&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">2</span>;j&lt;=<span class="built_in">sqrt</span>(i);j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(i%j==<span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(j&gt;<span class="built_in">sqrt</span>(i))</span><br><span class="line">        &#123;</span><br><span class="line">            num++;</span><br><span class="line">            <span class="keyword">if</span>(num&gt;=m&amp;&amp;num&lt;n)</span><br><span class="line">            &#123;</span><br><span class="line">                num2++;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d"</span>,i);</span><br><span class="line">                <span class="keyword">if</span>(num2%<span class="number">10</span>!=<span class="number">0</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">" "</span>);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span>(num2%<span class="number">10</span>==<span class="number">0</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(num==n)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d"</span>,i);</span><br><span class="line">                <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**************************************</span></span><br><span class="line"><span class="comment"> *             小柳学渣</span></span><br><span class="line"><span class="comment"> *         2019/1/25  0：20</span></span><br><span class="line"><span class="comment"> *************************************/</span></span><br></pre></td></tr></table></figure>
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2019/01/26/5/" title="每周一题 楼号m和n之间的最短移动距离">每周一题 楼号m和n之间的最短移动距离</a></h2>
+                <p class="excerpt">
+                
+                [问题描述]
+ X星球居民小区的楼房全是一样的，并且按矩阵样式排列。其楼房的编号为1,2,3…
+ 当排满一行时，从下一行相邻的楼往反方向排号。
+ 比如：当小区排号宽度为6时，开始情形如下：
+ 1  2  3  4  5  6
+ 12 11 10 9  8  7
+ 13 14 15 …..
+ 我们的问
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2019-01-26T12:18:38.382Z" class="post-list__meta--date date">2019-01-26</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/01/26/5/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2019/01/26/3/" title="PAT乙级真题  数字分类">PAT乙级真题  数字分类</a></h2>
+                <p class="excerpt">
+                
+                1012 数字分类 （20 分）
+给定一系列正整数，请按要求对数字进行分类，并输出以下 5 个数字：
+A​1​​ = 能被 5 整除的数字中所有偶数的和；
+A​2​​ = 将被 5 除后余 1 的数字按给出顺序进行交错求和，即计算 n​1​​−n​2​​+n​3​​−n​4​​⋯；
+A​3​​ = 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2019-01-26T12:14:36.374Z" class="post-list__meta--date date">2019-01-26</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/01/26/3/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2019 小柳学渣 - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
