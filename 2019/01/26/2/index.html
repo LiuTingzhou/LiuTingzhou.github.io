@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>PAT�Ҽ�����  A+B��C | 小柳学渣的网站</title>
+    <title>PAT乙级真题  A+B和C | 小柳学渣的网站</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -12,21 +12,21 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="��Ŀ������������[-2��31�η�, 2��31�η�]�ڵ�3������A��B��C�����ж�A+B�Ƿ����C��
-��������:�����1�и���������T(&amp;lt;=10)���ǲ��������ĸ�����������T�����������ÿ��ռһ�У�˳�����A��B��C���������Կո�ָ���
-�������:��ÿ������">
+    <meta name="description" content="题目描述给定区间[-2的31次方, 2的31次方]内的3个整数A、B和C，请判断A+B是否大于C。
+输入描述:输入第1行给出正整数T(&amp;lt;=10)，是测试用例的个数。随后给出T组测试用例，每组占一行，顺序给出A、B和C。整数间以空格分隔。
+输出描述:对每组测试用例，在一行中输出“Case #X: true”如果A+B&amp;gt;C，否则输出“Case #X: false”，其中X是测试用例的编号（">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="PAT�Ҽ�����  A+B��C | 小柳学渣的网站">
-    <meta name="twitter:description" content="��Ŀ������������[-2��31�η�, 2��31�η�]�ڵ�3������A��B��C�����ж�A+B�Ƿ����C��
-��������:�����1�и���������T(&amp;lt;=10)���ǲ��������ĸ�����������T�����������ÿ��ռһ�У�˳�����A��B��C���������Կո�ָ���
-�������:��ÿ������">
+    <meta name="twitter:title" content="PAT乙级真题  A+B和C | 小柳学渣的网站">
+    <meta name="twitter:description" content="题目描述给定区间[-2的31次方, 2的31次方]内的3个整数A、B和C，请判断A+B是否大于C。
+输入描述:输入第1行给出正整数T(&amp;lt;=10)，是测试用例的个数。随后给出T组测试用例，每组占一行，顺序给出A、B和C。整数间以空格分隔。
+输出描述:对每组测试用例，在一行中输出“Case #X: true”如果A+B&amp;gt;C，否则输出“Case #X: false”，其中X是测试用例的编号（">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="PAT�Ҽ�����  A+B��C | 小柳学渣的网站">
-    <meta property="og:description" content="��Ŀ������������[-2��31�η�, 2��31�η�]�ڵ�3������A��B��C�����ж�A+B�Ƿ����C��
-��������:�����1�и���������T(&amp;lt;=10)���ǲ��������ĸ�����������T�����������ÿ��ռһ�У�˳�����A��B��C���������Կո�ָ���
-�������:��ÿ������">
+    <meta property="og:title" content="PAT乙级真题  A+B和C | 小柳学渣的网站">
+    <meta property="og:description" content="题目描述给定区间[-2的31次方, 2的31次方]内的3个整数A、B和C，请判断A+B是否大于C。
+输入描述:输入第1行给出正整数T(&amp;lt;=10)，是测试用例的个数。随后给出T组测试用例，每组占一行，顺序给出A、B和C。整数间以空格分隔。
+输出描述:对每组测试用例，在一行中输出“Case #X: true”如果A+B&amp;gt;C，否则输出“Case #X: false”，其中X是测试用例的编号（">
 
     
     <meta name="author" content="小柳学渣">
@@ -158,16 +158,16 @@
       </span> 
    
     </div>
-    <h1 class="post-title">PAT�Ҽ�����  A+B��C</h1>
+    <h1 class="post-title">PAT乙级真题  A+B和C</h1>
   </header>
 
   <section class="post">
-    <p>��Ŀ����<br>��������[-2��31�η�, 2��31�η�]�ڵ�3������A��B��C�����ж�A+B�Ƿ����C��</p>
-<p>��������:<br>�����1�и���������T(&lt;=10)���ǲ��������ĸ�����������T�����������ÿ��ռһ�У�˳�����A��B��C���������Կո�ָ���</p>
-<p>�������:<br>��ÿ�������������һ���������Case #X: true�����A+B&gt;C�����������Case #X: false��������X�ǲ��������ı�ţ���1��ʼ����</p>
-<p>��������:<br>4<br>1 2 3<br>2 3 4<br>2147483647 0 2147483646<br>0 -2147483648 -2147483647</p>
-<p>�������:<br>Case #1: false<br>Case #2: true<br>Case #3: true<br>Case #4: false</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> a,b,c;</span><br><span class="line">    <span class="keyword">int</span> n,i;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%lf%lf%lf"</span>,&amp;a,&amp;b,&amp;c);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(a&lt;<span class="number">0</span>&amp;&amp;b&lt;<span class="number">0</span>&amp;&amp;a+b&gt;<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Case #%d: false\n"</span>,i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(a+b&gt;c||(a&gt;<span class="number">0</span>&amp;&amp;b&gt;<span class="number">0</span>&amp;&amp;a+b&lt;<span class="number">0</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Case #%d: true\n"</span>,i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Case #%d: false\n"</span>,i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*********************************</span></span><br><span class="line"><span class="comment">*         С��ѧ��</span></span><br><span class="line"><span class="comment">*     2019/1/21  17:16</span></span><br><span class="line"><span class="comment">**********************************/</span></span><br></pre></td></tr></table></figure>
+    <p>题目描述<br>给定区间[-2的31次方, 2的31次方]内的3个整数A、B和C，请判断A+B是否大于C。</p>
+<p>输入描述:<br>输入第1行给出正整数T(&lt;=10)，是测试用例的个数。随后给出T组测试用例，每组占一行，顺序给出A、B和C。整数间以空格分隔。</p>
+<p>输出描述:<br>对每组测试用例，在一行中输出“Case #X: true”如果A+B&gt;C，否则输出“Case #X: false”，其中X是测试用例的编号（从1开始）。</p>
+<p>输入例子:<br>4<br>1 2 3<br>2 3 4<br>2147483647 0 2147483646<br>0 -2147483648 -2147483647</p>
+<p>输出例子:<br>Case #1: false<br>Case #2: true<br>Case #3: true<br>Case #4: false</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> a,b,c;</span><br><span class="line">    <span class="keyword">int</span> n,i;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%lf%lf%lf"</span>,&amp;a,&amp;b,&amp;c);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(a&lt;<span class="number">0</span>&amp;&amp;b&lt;<span class="number">0</span>&amp;&amp;a+b&gt;<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Case #%d: false\n"</span>,i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(a+b&gt;c||(a&gt;<span class="number">0</span>&amp;&amp;b&gt;<span class="number">0</span>&amp;&amp;a+b&lt;<span class="number">0</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Case #%d: true\n"</span>,i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Case #%d: false\n"</span>,i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*********************************</span></span><br><span class="line"><span class="comment">*         小柳学渣</span></span><br><span class="line"><span class="comment">*     2019/1/21  17:16</span></span><br><span class="line"><span class="comment">**********************************/</span></span><br></pre></td></tr></table></figure>
   </section>
 
 </article>
