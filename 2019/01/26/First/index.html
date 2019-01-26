@@ -3,19 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>С��ѧ���Ĳ���</title>
+  <title>PAT乙级真题 | С��ѧ���Ĳ���</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: First Night 我有一头小毛驴，可是我从来都不骑。">
+  <meta name="description" content="题目描述给定三条边，请你判断一下能不能组成一个三角形。 输入描述:输入包含多组数据，每组数据包含三个正整数a、b、c（1≤a, b, c≤10^100）。 输出描述:对应每一组数据，如果它们能组成一个三角形，则输出“Yes”；否则，输出“No”。 输入例子:1 2 32 2 2 输出例子:NoYes 1234567891011121314151617181920#include &amp;lt;stdio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="С��ѧ���Ĳ���">
+<meta property="og:title" content="PAT乙级真题">
 <meta property="og:url" content="http://yoursite.com/2019/01/26/First/index.html">
 <meta property="og:site_name" content="С��ѧ���Ĳ���">
-<meta property="og:description" content="title: First Night 我有一头小毛驴，可是我从来都不骑。">
+<meta property="og:description" content="题目描述给定三条边，请你判断一下能不能组成一个三角形。 输入描述:输入包含多组数据，每组数据包含三个正整数a、b、c（1≤a, b, c≤10^100）。 输出描述:对应每一组数据，如果它们能组成一个三角形，则输出“Yes”；否则，输出“No”。 输入例子:1 2 32 2 2 输出例子:NoYes 1234567891011121314151617181920#include &amp;lt;stdio">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-26T08:35:36.803Z">
+<meta property="og:updated_time" content="2019-01-26T09:40:00.643Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="С��ѧ���Ĳ���">
-<meta name="twitter:description" content="title: First Night 我有一头小毛驴，可是我从来都不骑。">
+<meta name="twitter:title" content="PAT乙级真题">
+<meta name="twitter:description" content="题目描述给定三条边，请你判断一下能不能组成一个三角形。 输入描述:输入包含多组数据，每组数据包含三个正整数a、b、c（1≤a, b, c≤10^100）。 输出描述:对应每一组数据，如果它们能组成一个三角形，则输出“Yes”；否则，输出“No”。 输入例子:1 2 32 2 2 输出例子:NoYes 1234567891011121314151617181920#include &amp;lt;stdio">
   
     <link rel="alternate" href="/atom.xml" title="С��ѧ���Ĳ���" type="application/atom+xml">
   
@@ -74,17 +74,28 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      PAT乙级真题
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="title-First-Night"><a href="#title-First-Night" class="headerlink" title=" title: First Night"></a> title: First Night</h2><blockquote>
-<p>我有一头<strong>小毛驴</strong>，可是我从来都不骑。</p>
-</blockquote>
-
+        <p>题目描述<br>给定三条边，请你判断一下能不能组成一个三角形。</p>
+<p>输入描述:<br>输入包含多组数据，每组数据包含三个正整数a、b、c（1≤a, b, c≤10^100）。</p>
+<p>输出描述:<br>对应每一组数据，如果它们能组成一个三角形，则输出“Yes”；否则，输出“No”。</p>
+<p>输入例子:<br>1 2 3<br>2 2 2</p>
+<p>输出例子:<br>No<br>Yes</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> a,b,c;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%lf%lf%lf"</span>,&amp;a,&amp;b,&amp;c))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(a+b&lt;=c||a+c&lt;=b||b+c&lt;=a)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"No\n"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Yes\n"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*********************************</span></span><br><span class="line"><span class="comment">*         小柳学渣</span></span><br><span class="line"><span class="comment">*     2019/1/21  16：21</span></span><br><span class="line"><span class="comment">**********************************/</span></span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/26/First/" data-id="cjrd9zwko000004tarjg3hfeo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/26/First/" data-id="cjrdac0wt00008ktalvrc1ooq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +144,7 @@
       <ul>
         
           <li>
-            <a href="/2019/01/26/First/">(no title)</a>
+            <a href="/2019/01/26/First/">PAT乙级真题</a>
           </li>
         
           <li>
