@@ -12,21 +12,24 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="#include 
+    <meta name="description" content="C++队列是一种容器适配器，它给予程序员一种先进先出(FIFO)的数据结构。 
+#include 
 back() : 返回队尾元素empty() : 如果队列空则返回true,否则返回falsefront() : 返回队首元素pop() : 删除队首元素push() : 在队尾加入一个元素size() : 返回队列中元素的个数 
-123456789101112131415161718192021222324252627282930313233#include &amp;lt;iost">
+1234567891011121314151617181920212">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="C++ STL queue 队列 | 小柳学渣的网站">
-    <meta name="twitter:description" content="#include 
+    <meta name="twitter:description" content="C++队列是一种容器适配器，它给予程序员一种先进先出(FIFO)的数据结构。 
+#include 
 back() : 返回队尾元素empty() : 如果队列空则返回true,否则返回falsefront() : 返回队首元素pop() : 删除队首元素push() : 在队尾加入一个元素size() : 返回队列中元素的个数 
-123456789101112131415161718192021222324252627282930313233#include &amp;lt;iost">
+1234567891011121314151617181920212">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="C++ STL queue 队列 | 小柳学渣的网站">
-    <meta property="og:description" content="#include 
+    <meta property="og:description" content="C++队列是一种容器适配器，它给予程序员一种先进先出(FIFO)的数据结构。 
+#include 
 back() : 返回队尾元素empty() : 如果队列空则返回true,否则返回falsefront() : 返回队首元素pop() : 删除队首元素push() : 在队尾加入一个元素size() : 返回队列中元素的个数 
-123456789101112131415161718192021222324252627282930313233#include &amp;lt;iost">
+1234567891011121314151617181920212">
 
     
     <meta name="author" content="小柳学渣">
@@ -162,7 +165,8 @@ back() : 返回队尾元素empty() : 如果队列空则返回true,否则返回fa
   </header>
 
   <section class="post">
-    <p>#include <queue></queue></p>
+    <p>C++队列是一种容器适配器，它给予程序员一种先进先出(FIFO)的数据结构。 </p>
+<p>#include <queue></queue></p>
 <p>back() : 返回队尾元素<br>empty() : 如果队列空则返回true,否则返回false<br>front() : 返回队首元素<br>pop() : 删除队首元素<br>push() : 在队尾加入一个元素<br>size() : 返回队列中元素的个数 </p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>; </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q;</span><br><span class="line">    <span class="keyword">int</span> choice,e;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"1.判断队列是否为空\n"</span></span><br><span class="line">              <span class="string">"2.队列中元素个数\n"</span></span><br><span class="line">              <span class="string">"3.删除队首元素\n"</span></span><br><span class="line">              <span class="string">"4.输出队首元素\n"</span> </span><br><span class="line">              <span class="string">"5.在队尾插入元素\n"</span></span><br><span class="line">              <span class="string">"6.输出队尾元素\n"</span>;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;choice;</span><br><span class="line">        <span class="keyword">switch</span>(choice)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:<span class="built_in">cout</span>&lt;&lt;(q.empty()?<span class="string">"空\n"</span>:<span class="string">"不空\n"</span>);<span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:<span class="built_in">cout</span>&lt;&lt;<span class="string">"元素个数为："</span>&lt;&lt;q.size()&lt;&lt;<span class="string">"\n"</span>;<span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">3</span>:<span class="keyword">if</span>(q.empty())<span class="built_in">cout</span>&lt;&lt;<span class="string">"队列为空\n"</span>;<span class="keyword">else</span>&#123;q.pop();<span class="built_in">cout</span>&lt;&lt;<span class="string">"删除成功\n"</span>;&#125;<span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">4</span>:q.empty()?<span class="built_in">cout</span>&lt;&lt;<span class="string">"队列为空\n"</span>:<span class="built_in">cout</span>&lt;&lt;<span class="string">"队首元素为:"</span>&lt;&lt;q.front()&lt;&lt;<span class="string">"\n"</span>;<span class="keyword">break</span>; </span><br><span class="line">            <span class="keyword">case</span> <span class="number">5</span>:<span class="built_in">cout</span>&lt;&lt;<span class="string">"请输入要插入的元素："</span>;<span class="built_in">cin</span>&gt;&gt;e;q.push(e);<span class="built_in">cout</span>&lt;&lt;<span class="string">"插入成功\n"</span>;<span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">6</span>:q.empty()?<span class="built_in">cout</span>&lt;&lt;<span class="string">"队列为空\n"</span>:<span class="built_in">cout</span>&lt;&lt;<span class="string">"队尾元素为:"</span>&lt;&lt;q.back()&lt;&lt;<span class="string">"\n"</span>;<span class="keyword">break</span>; </span><br><span class="line">            <span class="keyword">default</span>:<span class="built_in">cout</span>&lt;&lt;<span class="string">"输入错误，请重新输入!\n"</span>;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">/************************************************</span></span><br><span class="line"><span class="comment">*                 小柳学渣</span></span><br><span class="line"><span class="comment">*             2019/1/22  20:14</span></span><br><span class="line"><span class="comment">************************************************/</span></span><br></pre></td></tr></table></figure>
   </section>
@@ -180,9 +184,9 @@ back() : 返回队尾元素empty() : 如果队列空则返回true,否则返回fa
                 <h2 class="post-list__post-title post-title"><a href="/2019/01/27/7/" title="C++ STL stack 栈">C++ STL stack 栈</a></h2>
                 <p class="excerpt">
                 
-                #include 
-empty() : 栈为空则返回true,否则返回falsepop() : 移除栈顶元素push() : 在栈顶增加元素size() : 返回栈中元素数目top() : 返回栈顶元素 
-12345678910111213141516171819202122232425262728
+                C++ stack（栈） 是一个容器类的改编，为程序员提供了栈的全部功能，——也就是说实现了一个先进后出（FILO）的数据结构。
+#include 
+empty() : 栈为空则返回true,否则返回falsepop() : 移除栈顶元素push() : 在栈顶增加元素size() : 返回栈中元素
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2019-01-26T16:26:45.480Z" class="post-list__meta--date date">2019-01-27</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/01/27/7/">继续阅读</a></div>
